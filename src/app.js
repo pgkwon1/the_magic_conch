@@ -2,10 +2,8 @@ require('dotenv').config()
 const {
     Client,
     GatewayIntentBits,
-    EmbedBuilder
 } = require('discord.js');
-const Discord = require('discord.js'); // discord.js 라이브러리 호출
-const client = new Discord.Client({
+const client = new Client({
     intents: [
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.Guilds,
